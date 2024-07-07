@@ -7,4 +7,4 @@ def fibonacci():
 
 fib = fibonacci()
 print(next(fib))  # Output:0
-print(next(fib))  # OUtput:1
+print(next(fib))  # Output:1
