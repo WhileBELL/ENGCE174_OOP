@@ -1,3 +1,4 @@
+# ช่วยด้วย
 def generate_pattern01(n, current=0, result=""):
     if current == n:
         return result
