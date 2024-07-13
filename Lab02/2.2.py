@@ -37,6 +37,8 @@ def generate_pattern05(n, current=0, result=""):
 # รับค่า x จากผู้ใช้
 x = int(input("Enter a number (integer): "))
 
+#test lazygit
+
 # แสดงผลลัพธ์สำหรับแต่ละฟังก์ชัน generate_pattern
 pattern = generate_pattern01(x)
 print(pattern, end="")
