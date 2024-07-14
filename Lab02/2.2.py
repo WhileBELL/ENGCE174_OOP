@@ -1,4 +1,3 @@
-# ช่วยด้วย
 def generate_pattern01(n, current=0, result=""):
     if current == n:
         return result
@@ -34,10 +33,8 @@ def generate_pattern05(n, current=0, result=""):
     return generate_pattern05(n, current + 1, result + line + "\n")
 
 
-# รับค่า x จากผู้ใช้
 x = int(input("Enter a number (integer): "))
 
-# แสดงผลลัพธ์สำหรับแต่ละฟังก์ชัน generate_pattern
 pattern = generate_pattern01(x)
 print(pattern, end="")
 print("-------------")
