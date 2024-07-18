@@ -6,7 +6,7 @@ def generate_patterns(
 
     line1 = "*" * current
     line2 = " " * (n - current) + "*" * current
-    line3 = "*" * (n - current)
+    line3 = "*" * (n - current + 1)
     line4 = " " * (n - current) + "* " * current
     line5 = " " * (current - 1) + "* " * (n - current + 1)
 
