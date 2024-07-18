@@ -1,9 +1,12 @@
 def generate_patterns(n, current=0, results=None):
-    if results is None:
-        results = [""] * 5  # Initialize results for 5 patterns
+    results1 = ""
+    results2 = ""
+    results3 = ""
+    results4 = ""
+    results5 = ""
 
     if current == n:
-        return results
+        return results1, results2, results3, results4, results5
 
     line1 = "*" * (current + 1)
     line2 = " " * (n - current - 1) + "*" * (current + 1)
@@ -11,11 +14,11 @@ def generate_patterns(n, current=0, results=None):
     line4 = " " * (n - current - 1) + "* " * (current + 1)
     line5 = " " * current + "* " * (n - current)
 
-    results[0] += line1 + "\n"
-    results[1] += line2 + "\n"
-    results[2] += line3 + "\n"
-    results[3] += line4 + "\n"
-    results[4] += line5 + "\n"
+    results1 += line1 + "\n"
+    results2 += line2 + "\n"
+    results3 += line3 + "\n"
+    results4 += line4 + "\n"
+    results5 += line5 + "\n"
 
     return generate_patterns(n, current + 1, results)
 
@@ -26,13 +29,7 @@ def generateline(n):
 
 x = int(input("Enter a number (integer): "))
 
-patterns = generate_patterns(x)
-
-pattern1 = patterns[0]
-pattern2 = patterns[1]
-pattern3 = patterns[2]
-pattern4 = patterns[3]
-pattern5 = patterns[4]
+pattern1, pattern2, pattern3, pattern4, pattern5 = generate_patterns(x)
 
 print(pattern1)
 generateline(x * 2)
