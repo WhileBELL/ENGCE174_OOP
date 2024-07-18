@@ -33,24 +33,28 @@ def generate_pattern05(n, current=0, result=""):
     return generate_pattern05(n, current + 1, result + line + "\n")
 
 
+def generateline(n):
+    print("-" * n)
+
+
 x = int(input("Enter a number (integer): "))
 
 pattern = generate_pattern01(x)
 print(pattern, end="")
-print("-------------")
+print("-" * x * 2)
 
 pattern = generate_pattern02(x)
 print(pattern, end="")
-print("-------------")
+print("-" * x * 2)
 
 pattern = generate_pattern03(x)
 print(pattern, end="")
-print("-------------")
+print("-" * x * 2)
 
 pattern = generate_pattern04(x)
 print(pattern, end="")
-print("-------------")
+print("-" * x * 2)
 
 pattern = generate_pattern05(x)
 print(pattern, end="")
-print("-------------")
+print("-" * x * 2)
