@@ -13,7 +13,7 @@ print(
     "Intersection set:", intersection_set
 )  # Output: Intersection set: {1,2,3,4,5,6,7}
 
-# Intersection of two sets
+# Difference of two sets
 difference_set = set1 - set2
 print("Difference set:", difference_set)  # Output: Difference set: (set1 - set2):{1,2}
 

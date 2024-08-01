@@ -15,5 +15,5 @@ for student, grade in grades.items():
 
 # Using get() method to avoid KeyError
 print(
-    "Frank's grade:", grades.get("frank", "Grade not found")
-)  # Output: Frank's grade: Grade
+    "Frank's grade:", grades.get("Frank", "Grade not found")
+)  # Output: Frank's grade: Grade not found
